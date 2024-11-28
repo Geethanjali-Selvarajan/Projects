@@ -1,0 +1,152 @@
+/* Styles to reset default values  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for entire body  */
+body {
+    background-color: #F1F4F7;
+    font-family: system-ui, -apple-system, "system-ui", ".SFNSText-Regular", sans-serif;
+}
+
+/* Styles for the Total login container  */
+.login-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 95vh;
+}
+
+/* Styles for application name  */
+.application-name {
+    font-size: 3.438rem;
+    color: #0765FF;
+}
+
+/* Style for application description  */
+.description {
+    font-size: 1.5rem;
+}
+
+/* Styles for user credentials container  */
+.credentials {
+    width: 30%;
+    padding: 2rem 1.75rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+}
+
+/* Styles for the login form container  */
+.login-form-container {
+    margin-bottom: 1.75rem;
+    border-bottom: 2px solid #ccc;
+}
+
+/* Style for the children of login form container  */
+.login-form-container div {
+    padding-bottom: 1.25rem;
+}
+
+/* Styles for the input element  */
+.input-container input {
+    padding: 0.875rem 0.5rem;
+    border: 1px solid #ccc;
+}
+
+/* Styles for input element and login button  */
+.input-container input, .submit-button button{
+    width: 100%;
+    border-radius: 0.25rem;
+    font-size: 1.125rem; 
+}
+
+/* Styles for login button  */
+.submit-button button {
+    padding: 0.75rem; 
+    border: 1px solid #156EE5;
+    background-color: #156EE5;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Styles for reset password anchor element  */
+.reset-password-container a{
+    color: #156EE5;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Styles for sign up button  */
+.signup-button button {
+    width: 40%;
+    padding: 0.625rem;
+    border: 1px solid #299F2A;
+    border-radius: 0.25rem;
+    background-color: #299F2A;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* Media query for mobile screens and tablet screen  */
+@media (max-width:767px) {
+    .login-container {
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+
+    .login-container div {
+        width: 100%;
+    }
+
+    .application-name {
+        font-size: 2.5rem;
+    }
+
+    .description {
+        font-size: 1.188rem;
+    }
+
+    .login-form-container {
+        margin-bottom: 1.5rem;
+    }
+    .credentials {
+        padding: 1.5rem;
+    }
+
+    .signup-button button {
+        width: 60%;
+        font-size: 0.875rem;
+    }
+}
+
+/* Styles for tablet and laptop screen  */
+@media (min-width:768px) and (max-width:1024px) {
+    .app-details {
+        width: 40%;
+    }
+
+    .application-name {
+        font-size: 2.813rem;
+    }
+
+    .description {
+        font-size: 1.313rem;
+    }
+
+    .credentials {
+        width: 45%;
+    }
+
+    .signup-button button {
+        width: 54%;
+        font-size: 0.938rem;
+    }
+}
+

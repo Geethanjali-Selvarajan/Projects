@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <!-- External Stylesheet Link  -->
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <!-- Container to display the whole content  -->
+    <div class="login-container">
+        
+        <!-- Container to display the application details  -->
+        <div class="app-details">
+            <h1 class="application-name">facebook</h1>
+            <p class="description">Connect with friends and the world around you on Facebook.</p>
+        </div>
+
+        <!-- Container to collect user credentials  -->
+        <div class="credentials">
+
+            <!-- Container to enclose the login form  -->
+            <div class="login-form-container">
+
+                <!-- Form to collect user login credentials  -->
+                <form id="login-form" action="#login" method="post">
+
+                    <!-- Container to collect email input  -->
+                    <div class="input-container">
+                        <input type="text" name="email" id="email" placeholder="Email or phone number" required>
+                    </div>
+
+                    <!-- Container to collect password input  -->
+                    <div class="input-container">
+                        <input type="password" name="password" id="password" placeholder="Password" required>
+                    </div>
+
+                    <!-- Container to display submit button  -->
+                    <div class="submit-button">
+                        <button type="submit">Login</button>
+                    </div>
+
+                    <!-- Container to display reset password link  -->
+                    <div class="reset-password-container">
+                        <a href="https://www.google.com/" target="_blank">Forgot Password?</a>
+                    </div>
+                </form>
+
+            </div>
+
+            <!-- Container to display signup button  -->
+            <div class="signup-button">
+                <button type="submit">Create new account</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
